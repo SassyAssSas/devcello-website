@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Violoncello</title>
+    <link rel="stylesheet" href="../css/game.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="logo" translate="no">Violoncello</div>
+            <div class="line-separator"></div>
+            <div class="header-buttons">
+                <div class="buttons-group">
+                    <a href="../about-me.html" class="button" data-lang="about-me">About me</a>
+                    <a href="../index.html" class="button" data-lang="my-projects">My projects</a>
+                </div>
+                <div id="menu-button">
+                    <img src="../images/icons/menu.png" alt="" width="40" height="40">
+                </div>
+                <div class="button" data-lang="lang-switch-button">EN</div>
+            </div>
+            <div id="dropdown-menu">
+                <a href="../about-me.html" class="dropdown-button" data-lang="about-me">About me</a>
+                <a href="../index.html" class="dropdown-button" data-lang="my-projects">My projects</a>
+                <div class="dropdown-button" data-lang="dropdown-lang-switch-button">Language: EN</div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="main">
+            <h1 translate="no">Dungeon Master</h1>
+            <div class="game-info">
+                <div class="content">
+                    <div class="showcase-box">
+                        <iframe class="showcase" src="https://www.youtube.com/embed/-1K6A5ngw9c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="description">
+                        <div class="title" data-lang="desc-title">Description:</div>
+                        <div class="text">
+                            <p data-lang="desc-1">A PC rogue-like game I'm currently making for my college.</p>
+                            <p data-lang="desc-2">You play as a knight whose goal is to clean the dungeon from enemies, kill the boss and proceed to the next dungeon.</p>
+                            <p data-lang="desc-3">Each dungeon level is unique as they are randomly generated.</p>
+                            <p data-lang="desc-4">Even though it's not finished yet, I'm already the most proud of this work than any other I've ever made.</p>
+                        </div>
+                    </div> 
+                    <div class="buttons-box">
+                        <a class="button download-button" target="_blank" data-lang="download-button" href="https://drive.google.com/drive/folders/18lbz09pmW8Cwhwb1ZeKu1CpILOzsS-yG?usp=sharing">
+                            Download alpha
+                        </a>
+                        <a class="button" id="github-button" target="_blank" data-lang="github-button" href="https://github.com/SassyAssSas/CollegeDungeonMaster">
+                            View source on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/lang.js"></script>
+    <script src="../js/localization.js"></script>
+    <script src="../js/menuButtons.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Violoncello</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="logo" translate="no">Violoncello</div>
+            <div class="line-separator"></div>
+            <div class="header-buttons">
+                <div class="buttons-group">
+                    <a href="about-me.html" class="button" data-lang="about-me">About me</a>
+                    <a href="index.html" class="button" data-lang="my-projects">My projects</a>
+                </div>
+                <div id="menu-button">
+                    <img src="images/icons/menu.png" alt="" width="40" height="40">
+                </div>
+                <div class="button" data-lang="lang-switch-button">EN</div>
+            </div>
+            <div id="dropdown-menu">
+                <a href="about-me.html" class="dropdown-button" data-lang="about-me">About me</a>
+                <a href="index.html" class="dropdown-button" data-lang="my-projects">My projects</a>
+                <div class="dropdown-button" data-lang="dropdown-lang-switch-button">Language: EN</div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="main">
+            <div class="content">
+                <h1 data-lang="main-title">About me</h1>
+                <p data-lang="text">
+                    My real name is Vadim. I'm an 19 years old self-taught C# programmer, unity game developer.
+                    <br>
+                    <br>
+                    This is my personal website that I made to show my projects.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/lang.js"></script>
+    <script src="js/localization.js"></script>
+    <script src="js/menuButtons.js"></script>
+</body>
+</html>

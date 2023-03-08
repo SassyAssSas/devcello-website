@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Roboto&family=Tilt+Neon&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: whitesmoke;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80vw;
+    height: 100%;
+
+    display: flex;
+}
+
+.header {
+    width: 100%;
+    height: 85px;
+    line-height: 85px;
+    background-color: #0C0F1A;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 1px;
+    color: rgb(245, 245, 245);
+}
+
+.header .logo {
+    font-size: 32px;   
+    font-weight: bold;
+    user-select: none;
+}
+
+.header .line-separator {
+    margin: auto 30px;
+    height: 40px;
+    border-left: 1px solid rgb(245, 245, 245);
+}
+
+.header .header-buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header .header-buttons .button {
+    padding-left: 20px;
+    padding-right: 20px;    
+    font-size: 22px;
+    color: rgb(245, 245, 245);
+    text-decoration: none;
+    user-select: none;
+}
+
+#menu-button {
+    display: none;
+}
+
+#dropdown-menu {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 79px;
+    height: fit-content;
+    background-color: #0C0F1A;
+    display: none;
+    flex-direction: column;
+}
+
+#dropdown-menu .dropdown-button {
+    height: 60px;
+    line-height: 60px;
+    color: rgb(245, 245, 245);
+    border-top: 2px dashed rgb(245, 245, 245);
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+}
+
+.header .header-buttons .button:hover {
+    cursor: pointer;
+    color: rgb(215, 215, 215);
+}
+
+.header .header-buttons .button:active {
+    color: rgb(190, 190, 190);
+}
+
+#dropdown-menu .dropdown-button:hover {
+    cursor: pointer;
+    color: rgb(215, 215, 215);
+} 
+
+/* Content */
+
+.main {
+    width: 100%;
+    height: 850px;
+    background-color: rgb(230, 230, 230);
+    color: rgb(10, 10, 10);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.content {
+    margin: 0 auto;
+    width: 80%;
+    height: fit-content;
+}
+
+.main h1 {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 45px;
+}
+
+.main p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    text-indent: 10px;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .container {
+        width: 95vw;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        width: 95vw;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .container {
+        width: 95vw;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .header .header-buttons .button {
+        display: none;
+    }
+
+    .header .line-separator {
+        display: none;
+    }
+
+    .header .container {
+        width: 80vw;
+        justify-content: space-between;
+    }
+
+    #menu-button {
+        display: flex;
+        margin: auto 0; 
+    }
+}

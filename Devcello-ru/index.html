@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Violoncello</title>
+    <link rel="stylesheet" href="css/projects.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="logo" translate="no">Violoncello</div>
+            <div class="line-separator"></div>
+            <div class="header-buttons">
+                <div class="buttons-group">
+                    <a href="about-me.html" class="button" data-lang="about-me">About me</a>
+                    <a href="index.html" class="button" data-lang="my-projects">My projects</a>
+                </div>
+                <div id="menu-button">
+                    <img src="images/icons/menu.png" alt="" width="40" height="40">
+                </div>
+                <div class="button" data-lang="lang-switch-button">EN</div>
+            </div>
+            <div id="dropdown-menu">
+                <a href="about-me.html" class="dropdown-button" data-lang="about-me">About me</a>
+                <a href="index.html" class="dropdown-button" data-lang="my-projects">My projects</a>
+                <div class="dropdown-button" data-lang="dropdown-lang-switch-button">Language: EN</div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="main">
+            <h1 data-lang="main-title">My projects</h1>
+            <a class="project-box" href="projects/dungeon-master.html">
+                <div class="content">
+                    <div class="image-box">
+                        <img class="thumbnail" src="images/thumbnails/DungeonMasterThumbnail.png" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="title" translate="no">Dungeon master</div>
+                        <div class="description">
+                            <p data-lang="dungeon-master-desc-1">A PC rogue-like game I'm currently making for my college.</p>
+                            <p data-lang="dungeon-master-desc-2">Even though it's not finished yet, I'm already the most proud of this work than any other I've ever made.</p>
+                        </div>
+                        <div class="details">
+                            <p data-lang="dungeon-master-status">Status: In development</p>
+                            <p data-lang="dungeon-master-date">Early 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="project-box" href="projects/swipe-driver.html">
+                <div class="content">
+                    <div class="image-box">
+                        <img class="thumbnail" src="images/thumbnails/SwipeRiderThumbnail.png" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="title" translate="no">Swipe Driver</div>
+                        <div class="description">
+                            <p data-lang="swipe-driver-desc-1">A casual mobile "game" about driving a car on an infinitely generating road.</p>
+                            <p data-lang="swipe-driver-desc-2">My first attempt to create a procedurally generated map. Basically it's not an actual game but just a training project since it doesn't have a goal.</p>
+                        </div>
+                        <div class="details">
+                            <p data-lang="swipe-driver-status">Status: Finished</p>
+                            <p data-lang="swipe-driver-date">Late 2021 - early 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="project-box" href="projects/dash.html">
+                <div class="content">
+                    <div class="image-box">
+                        <img class="thumbnail" src="images/thumbnails/DashThumbnail.png" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="title" translate="no">Dash!</div>
+                        <div class="description">
+                            <p data-lang="dash-desc-1">A casual mobile game inspired by "Duet" and a level from "Just shapes and beats".</p>
+                            <p data-lang="dash-desc-2">You play as a cyan cube, the objective is to escape the lava slowly going up and dodge all the white blocks that fall on you. The first ever game I tried to finish but couldn't due to the lack of experience.</p>
+                        </div>
+                        <div class="details">
+                            <p data-lang="dash-status">Status: Frozen</p>
+                            <p data-lang="dash-date">Early 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="project-box" href="projects/trickshot.html">
+                <div class="content">
+                    <div class="image-box" >
+                        <img class="thumbnail" src="images/thumbnails/ConceptThumbnail.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="title" translate="no">Trickshot</div>
+                        <div class="description">
+                            <p data-lang="trickshot-desc-1">A small mobile game. My first project that was lost long time ago and now I have only an apk.</p>
+                            <p data-lang="trickshot-desc-2">A game that represents my start point as a developer. You play as a red circle that can be moved by pulling a "slignshot". The objective is to avoid obstacles and reach the finish.</p>
+                        </div>
+                        <div class="details">
+                            <p data-lang="trickshot-status">Status: Finished</p>
+                            <p data-lang="trickshot-date">Early 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script src="js/lang.js"></script>
+    <script src="js/localization.js"></script>
+    <script src="js/menuButtons.js"></script>
+</body>
+</html>

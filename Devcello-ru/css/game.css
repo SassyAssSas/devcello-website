@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Roboto&family=Tilt+Neon&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: whitesmoke;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80vw;
+    height: 100%;
+
+    display: flex;
+}
+
+.header {
+    width: 100%;
+    height: 85px;
+    line-height: 85px;
+    background-color: #0C0F1A;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 1px;
+    color: rgb(245, 245, 245);
+}
+
+.header .logo {
+    font-size: 32px;   
+    font-weight: bold;
+    user-select: none;
+}
+
+.header .line-separator {
+    margin: auto 30px;
+    height: 40px;
+    border-left: 1px solid rgb(245, 245, 245);
+}
+
+.header .header-buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header .header-buttons .button {
+    padding-left: 20px;
+    padding-right: 20px;    
+    font-size: 22px;
+    color: rgb(245, 245, 245);
+    text-decoration: none;
+    user-select: none;
+}
+
+#menu-button {
+    display: none;
+}
+
+#dropdown-menu {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 79px;
+    height: fit-content;
+    background-color: #0C0F1A;
+    display: none;
+    flex-direction: column;
+}
+
+#dropdown-menu .dropdown-button {
+    height: 60px;
+    line-height: 60px;
+    color: rgb(245, 245, 245);
+    border-top: 2px dashed rgb(245, 245, 245);
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+}
+
+.header .header-buttons .button:hover {
+    cursor: pointer;
+    color: rgb(215, 215, 215);
+}
+
+.header .header-buttons .button:active {
+    color: rgb(190, 190, 190);
+}
+
+#dropdown-menu .dropdown-button:hover {
+    cursor: pointer;
+    color: rgb(215, 215, 215);
+} 
+
+/* Content */
+.main {
+    height: fit-content;
+    padding-bottom: 100px;
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    color: rgb(10, 10, 10);
+    font-family: 'Roboto', sans-serif;
+}
+
+.main h1 {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 45px;
+}
+
+.main .game-info .content .showcase-image {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 100%;
+    height: calc(var(--width) / 16 * 9);
+}
+
+#github-button {
+    background-color: rgb(15, 15, 25);
+}
+
+@media screen and (min-width: 1280px) {
+    .main .game-info {
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 80%;
+        height: fit-content;
+        background-color: rgb(245, 245, 245);
+        border: 1px solid lightgray;
+        display: flex;
+    }
+    
+    .main .game-info .content {
+        width: 100%;
+        height: fit-content;
+        padding: 30px 30px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main .game-info .content .showcase-box {
+        height: 300px;
+        aspect-ratio: 16 / 9;   
+        display: flex;
+    }
+
+    .main .game-info .content .showcase-box .showcase {
+        height: 100%;
+        aspect-ratio: 16 / 9;
+    }
+
+    .main .game-info .content .description {
+        margin-left: 20px;
+        width: 20%;
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main .game-info .content .description .title {
+        font-size: 30px;
+        font-weight: 700;
+        color: rgb(10, 10, 10);
+    }
+
+    .main .game-info .content .description p {
+        margin-top: 15px;
+        font-size: 16px;
+    }
+
+    .main .game-info .content .buttons-box {
+        margin-top: 20px;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: right;
+        flex-direction: row-reverse;
+    }
+
+    .main .game-info .content .buttons-box .button {
+        text-decoration: none;
+        color: rgb(245, 245, 245);
+        padding: 10px 40px;
+        margin-left: 20px;
+        display: flex;
+    }
+
+    .main .game-info .content .buttons-box .download-button {
+        background-color: rgb(221, 43, 20);
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .container {
+        width: 95vw;
+    }
+
+    .main .game-info {
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 80%;
+        height: fit-content;
+        background-color: rgb(245, 245, 245);
+        border: 1px solid lightgray;
+        display: flex;
+    }
+    
+    .main .game-info .content {
+        width: 100%;
+        height: fit-content;
+        padding: 30px 30px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main .game-info .content .showcase-box {
+        height: 250px;
+        aspect-ratio: 16 / 9;
+        display: flex;
+    }
+
+    .main .game-info .content .showcase-box .showcase {
+        height: 100%;
+        aspect-ratio: 16 / 9;
+    }
+
+    .main .game-info .content .description {
+        margin-left: 15px;
+        width: 20%;
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main .game-info .content .description .title {
+        font-size: 30px;
+        font-weight: 700;
+        color: rgb(10, 10, 10);
+    }
+
+    .main .game-info .content .description p {
+        margin-top: 15px;
+        font-size: 15px;
+    }
+
+    .main .game-info .content .buttons-box {
+        margin-top: 20px;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: right;
+        flex-direction: row-reverse;
+    }
+
+    .main .game-info .content .buttons-box .button {
+        text-decoration: none;
+        color: rgb(245, 245, 245);
+        padding: 10px 40px;
+        margin-left: 20px;
+        display: flex;
+    }
+
+    .main .game-info .content .buttons-box .download-button {
+        background-color: rgb(221, 43, 20);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        width: 95vw;
+    }
+
+    .main .game-info {
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 80%;
+        height: fit-content;
+        background-color: rgb(245, 245, 245);
+        border: 1px solid lightgray;
+        display: flex;
+    }
+    
+    .main .game-info .content {
+        width: 100%;
+        height: fit-content;
+        padding: 30px 30px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main .game-info .content .showcase-box {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        display: flex;
+    }
+
+    .main .game-info .content .showcase-box .showcase {
+        height: 100%;
+        aspect-ratio: 16 / 9;
+    }
+
+    .main .game-info .content .description {
+        width: 20%;
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main .game-info .content .description .title {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 35px;
+        font-weight: 700;
+        color: rgb(10, 10, 10);
+    }
+
+    .main .game-info .content .description p {
+        margin-top: 15px;
+        font-size: 15px;
+    }
+
+    .main .game-info .content .buttons-box {
+        margin-top: 20px;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: right;
+        flex-direction: row-reverse;
+    }
+
+    .main .game-info .content .buttons-box .button {
+        text-decoration: none;
+        color: rgb(245, 245, 245);
+        padding: 10px 40px;
+        margin-left: 20px;
+        display: flex;
+    }
+
+    .main .game-info .content .buttons-box .download-button {
+        background-color: rgb(221, 43, 20);
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .container {
+        width: 95vw;
+    }
+
+    .main h1 {
+        text-align: center;
+        margin-top: 60px;
+        font-size: 40px;
+    }
+
+    .main .game-info {
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 80%;
+        height: fit-content;
+        background-color: rgb(245, 245, 245);
+        border: 1px solid lightgray;
+        display: flex;
+    }
+    
+    .main .game-info .content {
+        margin: 0 auto;
+        width: 85%;
+        padding: 20px 0;
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main .game-info .content .showcase-box {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        display: flex;
+    }
+
+    .main .game-info .content .showcase-box .showcase {
+        height: 100%;
+        aspect-ratio: 16 / 9;
+    }
+
+    .main .game-info .content .description {
+        width: 100%;
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main .game-info .content .description .title {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 28px;
+        font-weight: 700;
+        color: rgb(10, 10, 10);
+    }
+
+    .main .game-info .content .description p {
+        margin-top: 14px;
+        font-size: 14px;
+    }
+
+    .main .game-info .content .buttons-box {
+        margin-top: 20px;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: right;
+        flex-direction: column;
+    }
+
+    .main .game-info .content .buttons-box .button {
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 20px 0;
+        color: rgb(245, 245, 245);
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .main .game-info .content .buttons-box .download-button {
+        background-color: rgb(221, 43, 20);
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .header .header-buttons .button {
+        display: none;
+    }
+
+    .header .line-separator {
+        display: none;
+    }
+
+    .header .container {
+        width: 80vw;
+        justify-content: space-between;
+    }
+
+    #menu-button {
+        display: flex;
+        margin: auto 0; 
+    }
+}

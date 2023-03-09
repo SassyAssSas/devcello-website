@@ -115,11 +115,30 @@ body {
     font-size: 45px;
 }
 
+.main h2 {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 38px;
+}
+
 .main p {
     text-align: center;
     margin-top: 20px;
     font-size: 18px;
-    text-indent: 10px;
+}
+
+.main .contacts-box {
+    margin-top: 25px;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    display: flex;
+}
+
+.main .contacts-box .social-media-icon {
+    margin: 0 15px;
+    width: 60px;
+    height: 60px;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {

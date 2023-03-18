@@ -27,11 +27,11 @@ data = {
 
         "contacts-title" : {
             "en": "My social media",
-            "ru": "Мои соцсети"
+            "ru": "Мои контакты"
         },
 
         "text": {
-            "en": "My real name is Vadim. I'm an 19 years old self-taught C# programmer, unity game developer. <br><br> This is my personal website that I made to show my projects.",
+            "en": "My name is Vadim. I'm an 19 years old self-taught C# programmer, unity game developer. <br><br> This is my personal website that I made to show my projects.",
             "ru": "Меня зовут Вадим, мне 19 лет. Я программист самоучка. Большую часть времени пишу на C#. Разрабатываю игры на Unity. <br><br> Это мой сайт-портфолио, котороый я создал для демонстрации своих проектов."
         }
     },

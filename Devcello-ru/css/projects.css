@@ -13,8 +13,13 @@ body {
     margin: 0 auto;
     width: 80vw;
     height: 100%;
-
     display: flex;
+}
+
+.logo {
+    font-size: 32px;   
+    font-weight: bold;
+    user-select: none;
 }
 
 .header {
@@ -25,12 +30,6 @@ body {
     font-family: 'Ubuntu', sans-serif;
     letter-spacing: 1px;
     color: rgb(245, 245, 245);
-}
-
-.header .logo {
-    font-size: 32px;   
-    font-weight: bold;
-    user-select: none;
 }
 
 .header .line-separator {
@@ -57,7 +56,7 @@ body {
 #menu-button {
     display: none;
 }
-
+ 
 #dropdown-menu {
     position: absolute;
     width: 100%;
@@ -92,6 +91,60 @@ body {
     cursor: pointer;
     color: rgb(215, 215, 215);
 } 
+
+.footer {
+    height: 300px;
+    max-height: fit-content;
+    background-color: #0C0F1A;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 1px;
+    color: rgb(245, 245, 245);
+} 
+
+.footer .logo-box, .footer .return-box {
+    width: 100%;
+    display: flex;
+}
+
+.footer .logo-box .logo {
+    margin: auto 0;
+}
+
+.footer .return-box .return-button {
+    width: 64px;
+    height: 64px;
+    margin: auto 0;
+    margin-right: 0;
+    display: flex;
+    margin-left: auto;
+}
+
+.footer .social-media {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .social-media .box {
+    margin: auto;
+}
+
+.footer .social-media .title {
+    font-size: 30px;
+    text-align: center;
+}
+
+.footer .social-media .icons {
+    margin-top: 25px;
+    display: flex;
+}
+
+.footer .social-media .icons .social-media-icon {
+    margin: auto 20px;
+    width: 64px;
+    height: 64px;
+    display: flex;
+}
 
 /* Main */
 .main {
@@ -434,6 +487,18 @@ body {
 
     .main .project-box .content .text .details p {
         font-weight: 700;
+    }
+
+    .footer .logo-box {
+        display: none;
+    }
+
+    .footer .return-box {
+        display: none;
+    }
+
+    .footer .social-media {
+        margin: 0 auto;
     }
 }
 
